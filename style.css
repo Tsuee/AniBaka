@@ -184,97 +184,135 @@ textarea:focus, input:focus{
   margin-right: 70px;
 }
 
-.banner {
-  height: 220px;
-  max-width: 100%;
-  border-radius: 25px;
-
-  position: absolute;
-  top: -0px;
-  left: -0px;
-}
 
 .grid-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 
-  position: relative;
 }
 
 .conteudo-principal {
-  height: 645px;
+  min-height: 880px;
+  height: auto;
   width: 800px;
   padding: 20px;
-  place-self: end;
+  position: relative;
   
   background: white;
   border-radius: 25px;   
 
   box-sizing: border-box;
   box-shadow: 1px 2px 6px 0px #00000005;
-}
-
-.informaçoes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 175px;
   
 }
 
-.informaçoes-item{
-  display: flex;
+
+.capa {
+  width: 150px;
+  border-radius: 15px;
 }
 
-.info-item01 {
-  color: white;
-  background: #c92547;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.info-item02, .info-item03 {
-  padding: 10px 15px;
-  background: #f5f6fb;
-  color: rgba(0, 0, 0, 0.2);
-
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.info-item02 {
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-.info-recado {
-  margin-bottom: 30px;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.animes-diario {
+.conteudo-info {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  gap: 35px 60px;
-  margin-bottom: 25px;
+  gap: 30px;
+  grid-template-columns: auto 1fr;
 }
 
-.paginas-mudar {
+.conteudo-info h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 500px;
+
+}
+
+.info-pr p {
+  margin-bottom: 3px;
+}
+
+.info-pr {
+  display: grid;
+    align-content: space-evenly;
+}
+
+.info-ep {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.rate {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin: 0px;
-
-  position: relative;
-  left: -10px;
+  margin-top: 20px;
+  gap: 10px;
 }
 
-.paginas-item {
-  background: #f5f6fb;
-  padding: 15px 20px;
+.rate div {
+  background: rgba(201, 37, 71, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.on {
+  font-size: 20px;
+  color: #c92547;
+}
+
+.off {
+  font-size: 20px;
+  color: #00000061;
+}
+
+.nota {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
   border-radius: 10px;
-  color: rgba(0, 0, 0, 0.5);
+  background: #F5F6FB;
+  color: #00000061;
+}
+  
+.nota:hover{
+  color: #000000b3;
+}
+
+.episodios-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.episodios-item img {
+  width: 130px;
+  border-radius: 10px;
+  background: black
+
+}
+
+.episodios-item h4 {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.episodios-item p {
+  width: auto;
+  color: #000000b3;
+}
+
+.separador {
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.a02, .a03, .a04 {
+  margin-top: 5px;
 }
 
 .principal {
